@@ -1,3 +1,4 @@
 # designed-components ignores... 
 node_modules/* 
-public
+public 
+.sass-cache

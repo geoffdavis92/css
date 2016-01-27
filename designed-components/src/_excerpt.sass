@@ -1,0 +1,79 @@
+$white: #ffffff
+$base: #ededed
+$blue: #359EFF
+$green: #00B85D
+$red: #C13040
+$gold: #FFD61B
+$inner-margin: 125px
+
+.excerpt
+	background-color: $white
+	box-shadow: 2px 2px 4px rgba(darken($base,15%),.5)
+	display: inline-block
+	font-size: 1.125em
+	margin: 20px 5vh
+	padding: 20px 25px
+	vertical-align: top
+	width: 33%
+	min-width: 200px
+	max-width: 600px
+	&.exc-default
+		border-left: 3px solid darken($base,25%)
+	&.exc-info
+		border-left: 3px solid $blue
+	&.exc-success
+		border-left: 3px solid $green
+	&.exc-warning
+		border-left: 3px solid $gold
+	&.exc-error
+		border-left: 3px solid lighten($red,10%)
+.box
+	@extend .excerpt
+	font-size: 1.5vmax
+	margin: 20px 0
+	width: 100%
+	min-width: 0
+	max-width: calc(100% - 50px)
+	&.banner
+		margin: 0 0 -25px
+		padding: 10px 10px 12px
+		text-align: center
+		max-width: calc(100% - 20px)
+		a
+			color: darken($blue,10%)
+			text-decoration: none
+	&.fixed
+		margin-top: 0
+		position: fixed
+		top: 0
+	&.box-default
+		background-color: darken($base,25%)
+		color: $base
+		letter-spacing: .025em
+		// text-shadow: 1px 1px darken($base,20%)
+	&.box-info
+		background-color: $blue
+		color: $white
+		font-weight: bold
+		letter-spacing: .025em
+		// text-shadow: 1px 1px darken($base,20%)
+	&.box-success
+		background-color: lighten($green,2.5%)
+		color: $white
+		font-weight: bold
+		letter-spacing: .025em
+		// text-shadow: 1px 1px darken($base,20%)
+	&.box-warning
+		background-color: darken($gold,5%)
+		color: $white
+		font-weight: bold
+		letter-spacing: .025em
+		text-shadow: 1px 1px darken($base,20%)
+	&.box-error
+		background-color: lighten($red,10%)
+		color: $white
+		font-weight: bold
+		letter-spacing: .025em
+		// text-shadow: 1px 1px darken($base,20%)
+
+// Example layout
