@@ -1,0 +1,30 @@
+{
+  "name": "css",
+  "version": "0.1.0",
+  "description": "Collection of Open Source CSS libraries/resources",
+  "main": "README.md",
+  "scripts": {
+    "config": "npm i; grunt build",
+    "components": "cd designed-components && grunt build && open http://localhost:12221 && httpster -p 12221",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoffdavis92/css.git"
+  },
+  "keywords": [
+    "CSS",
+    "library",
+    "resource",
+    "component"
+  ],
+  "author": "Geoff Davis <geoffdavis92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoffdavis92/css/issues"
+  },
+  "homepage": "https://github.com/geoffdavis92/css#readme",
+  "devDependencies": {
+    "httpster": "^1.0.1"
+  }
+}
